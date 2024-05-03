@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Playing on **nobility.cc**","In **Nobility**"];
+const statusMessages = ["Playing on nobility.cc","over Nobility"];
 
 
 let currentIndex = 0;
@@ -43,7 +43,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Watching}],
+    activities: [{ name: over Nobility, type: ActivityType.Watching}, { name: on Nobility, type: ActivityType.Streaming, url: 'https://www.youtube.com/@NobilityMC'}],
   });
 
   
