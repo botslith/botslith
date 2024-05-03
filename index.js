@@ -43,7 +43,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Watching}, { name: currentStatus, type: ActivityType.Streaming, url: 'https://www.youtube.com/@NobilityMC'}],
+    activities: [{ name: currentStatus, type: ActivityType.Watching}, { name: currentStatus, type: ActivityType.Playing}],
   });
 
   
