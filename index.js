@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Playing nobility.cc","Watching Nobility"];
+const statusMessages = ["Playing on **nobility.cc**","In **Nobility**"];
 
 
 let currentIndex = 0;
@@ -43,8 +43,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom}],
-    status: 'dnd',
+    activities: [{ name: currentStatus, type: ActivityType.Watching}],
   });
 
   
